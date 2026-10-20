@@ -1,6 +1,8 @@
 package io.github.mzbali.tizentube;
 
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.util.Log;
 import android.view.KeyEvent;
 import java.io.ByteArrayOutputStream;
@@ -11,6 +13,15 @@ import java.lang.ref.WeakReference;
 public class SpeedActivity extends dev.cobalt.app.MainActivity {
     private static WeakReference<SpeedActivity> foreground = new WeakReference<>(null);
     private String speedScript;
+    private final Handler startup = new Handler(Looper.getMainLooper());
+    private int startupAttempts;
+    private final Runnable configure = new Runnable() {
+        @Override public void run() {
+            if (foreground.get() != SpeedActivity.this || speedScript == null) return;
+            evaluateJavaScript(speedScript + "\nwindow.ttInstantSpeed.configureAndroidAddon();");
+            if (++startupAttempts < 20) startup.postDelayed(this, 500);
+        }
+    };
 
     @Override public void onCreate(Bundle state) {
         super.onCreate(state);
@@ -28,10 +39,13 @@ public class SpeedActivity extends dev.cobalt.app.MainActivity {
     @Override protected void onResume() {
         super.onResume();
         foreground = new WeakReference<>(this);
+        startupAttempts = 0;
+        startup.post(configure);
     }
 
     @Override protected void onPause() {
         if (foreground.get() == this) foreground.clear();
+        startup.removeCallbacks(configure);
         super.onPause();
     }
 
