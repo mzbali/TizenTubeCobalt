@@ -1,0 +1,249 @@
+{
+  "keymap_db_version": 25,
+  "keymap_list": [
+    {
+      "id": 0,
+      "uid": "50e78109-15ed-4e87-86d1-7eedaa7e5e05",
+      "name": "YouTube: slower",
+      "isEnabled": true,
+      "flags": 0,
+      "constraintMode": 1,
+      "constraintGroups": [],
+      "trigger": {
+        "keys": [
+          {
+            "clickType": 0,
+            "deviceId": "io.github.sds100.keymapper.ANY_DEVICE",
+            "keyCode": 190,
+            "flags": 0,
+            "uid": "3c6b2ab8-db04-437a-8346-723c935dab09"
+          }
+        ],
+        "extras": [],
+        "flags": 0,
+        "mode": 2
+      },
+      "constraintList": [
+        {
+          "type": "constraint_app_foreground",
+          "uid": "80811567-e939-40af-8df6-94156e544f42",
+          "isNot": false,
+          "extras": [
+            {
+              "id": "extra_package_name",
+              "data": "io.gh.reisxd.tizentube.cobalt"
+            }
+          ]
+        }
+      ],
+      "actionList": [
+        {
+          "type": "SYSTEM_ACTION",
+          "data": "switch_keyboard",
+          "flags": 0,
+          "uid": "3084054d-8925-43fd-96e9-00d5d29869fb",
+          "extras": [
+            {
+              "id": "extra_ime_id",
+              "data": "io.github.sds100.keymapper/.system.inputmethod.KeyMapperImeService"
+            },
+            {
+              "id": "extra_ime_name",
+              "data": "Key Mapper"
+            },
+            {
+              "id": "extra_delay_before_next_action",
+              "data": "300"
+            }
+          ]
+        },
+        {
+          "type": "KEY_EVENT",
+          "data": "186",
+          "flags": 0,
+          "uid": "d8ed8ce9-b1a3-4dbc-ac9f-9602111aec7b",
+          "extras": [
+            {
+              "id": "extra_meta_state",
+              "data": "0"
+            },
+            {
+              "id": "extra_delay_before_next_action",
+              "data": "1200"
+            }
+          ]
+        },
+        {
+          "type": "KEY_EVENT",
+          "data": "19",
+          "flags": 0,
+          "uid": "ecda9a96-c2ff-462a-a067-7f6894faea3a",
+          "extras": [
+            {
+              "id": "extra_meta_state",
+              "data": "0"
+            },
+            {
+              "id": "extra_delay_before_next_action",
+              "data": "300"
+            }
+          ]
+        },
+        {
+          "type": "KEY_EVENT",
+          "data": "23",
+          "flags": 0,
+          "uid": "9664ffe8-3211-485f-a03f-fce7d18e2955",
+          "extras": [
+            {
+              "id": "extra_meta_state",
+              "data": "0"
+            },
+            {
+              "id": "extra_delay_before_next_action",
+              "data": "300"
+            }
+          ]
+        },
+        {
+          "type": "SYSTEM_ACTION",
+          "data": "switch_keyboard",
+          "flags": 0,
+          "uid": "c6e053f2-2dec-4322-ac6b-7db94d9fd816",
+          "extras": [
+            {
+              "id": "extra_ime_id",
+              "data": "com.google.android.inputmethod.latin/com.android.inputmethod.latin.LatinIME"
+            },
+            {
+              "id": "extra_ime_name",
+              "data": "Gboard"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 0,
+      "uid": "792865a9-b965-4919-aa09-1907b7ccf7fe",
+      "name": "Netflix: faster",
+      "isEnabled": true,
+      "flags": 0,
+      "constraintMode": 1,
+      "constraintGroups": [],
+      "trigger": {
+        "keys": [
+          {
+            "clickType": 0,
+            "deviceId": "io.github.sds100.keymapper.ANY_DEVICE",
+            "keyCode": 191,
+            "flags": 0,
+            "uid": "4467122f-163e-46c5-9460-f5bc88fff111"
+          }
+        ],
+        "extras": [],
+        "flags": 0,
+        "mode": 2
+      },
+      "constraintList": [
+        {
+          "type": "constraint_app_foreground",
+          "uid": "341d747e-0b20-4717-8007-523698587611",
+          "isNot": false,
+          "extras": [
+            {
+              "id": "extra_package_name",
+              "data": "io.gh.reisxd.tizentube.cobalt"
+            }
+          ]
+        }
+      ],
+      "actionList": [
+        {
+          "type": "SYSTEM_ACTION",
+          "data": "switch_keyboard",
+          "flags": 0,
+          "uid": "31f6feca-0de9-4785-ad28-39f0997c5b3c",
+          "extras": [
+            {
+              "id": "extra_ime_id",
+              "data": "io.github.sds100.keymapper/.system.inputmethod.KeyMapperImeService"
+            },
+            {
+              "id": "extra_ime_name",
+              "data": "Key Mapper"
+            },
+            {
+              "id": "extra_delay_before_next_action",
+              "data": "300"
+            }
+          ]
+        },
+        {
+          "type": "KEY_EVENT",
+          "data": "186",
+          "flags": 0,
+          "uid": "22053a1e-084a-4050-a128-da3762acb337",
+          "extras": [
+            {
+              "id": "extra_meta_state",
+              "data": "0"
+            },
+            {
+              "id": "extra_delay_before_next_action",
+              "data": "1200"
+            }
+          ]
+        },
+        {
+          "type": "KEY_EVENT",
+          "data": "20",
+          "flags": 0,
+          "uid": "358a9399-a54b-40b6-b0cb-a43d0a96b2e3",
+          "extras": [
+            {
+              "id": "extra_meta_state",
+              "data": "0"
+            },
+            {
+              "id": "extra_delay_before_next_action",
+              "data": "300"
+            }
+          ]
+        },
+        {
+          "type": "KEY_EVENT",
+          "data": "23",
+          "flags": 0,
+          "uid": "1e946abf-dd5f-4754-8870-36bc71dd499b",
+          "extras": [
+            {
+              "id": "extra_meta_state",
+              "data": "0"
+            },
+            {
+              "id": "extra_delay_before_next_action",
+              "data": "300"
+            }
+          ]
+        },
+        {
+          "type": "SYSTEM_ACTION",
+          "data": "switch_keyboard",
+          "flags": 0,
+          "uid": "3c2a29f7-50aa-4ffc-8c4d-7a565adc4062",
+          "extras": [
+            {
+              "id": "extra_ime_id",
+              "data": "com.google.android.inputmethod.latin/com.android.inputmethod.latin.LatinIME"
+            },
+            {
+              "id": "extra_ime_name",
+              "data": "Gboard"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
