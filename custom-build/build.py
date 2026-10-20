@@ -42,8 +42,8 @@ def main():
     root = manifest.getroot()
     old_package = root.get('package')
     root.set('package', PACKAGE)
-    root.set(A + 'versionName', '2.0.3-speed.1')
-    root.set(A + 'versionCode', '20301')
+    root.set(A + 'versionName', '2.0.3-speed.2')
+    root.set(A + 'versionCode', '20302')
     app = root.find('application')
     app.set(A + 'label', 'YouTube')
     app.set(A + 'debuggable', 'false')
@@ -60,8 +60,8 @@ def main():
     # Explicit component broadcasts are used by Key Mapper; no arbitrary JS extras.
     manifest.write(DECODED / 'AndroidManifest.xml', encoding='utf-8', xml_declaration=True)
     config = DECODED / 'apktool.yml'
-    text = config.read_text().replace('versionCode: 203\n', 'versionCode: 20301\n')
-    text = text.replace('versionName: 2.0.3\n', 'versionName: 2.0.3-speed.1\n')
+    text = config.read_text().replace('versionCode: 203\n', 'versionCode: 20302\n')
+    text = text.replace('versionName: 2.0.3\n', 'versionName: 2.0.3-speed.2\n')
     config.write_text(text)
     shutil.copy2(SCRIPT, DECODED / 'assets/instantSpeed.js')
     artwork = ROOT / 'artwork/Youtube.png'

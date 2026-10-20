@@ -9,7 +9,7 @@ asset, and signs the APK with a local key.
 ## Behaviour
 
 - YouTube button: -0.25x. Netflix button: +0.25x.
-- Clamp to 0.25x–5x; briefly display the speed in the upper right corner.
+- Clamp the remote buttons to 0.25x–2x; briefly display the speed in the upper right corner.
 - Change the video directly through Cobalt's existing evaluateJavaScript bridge.
 - Save via the upstream settings command handler, keeping its cached setting,
   speed menu and next-video setting in sync.
